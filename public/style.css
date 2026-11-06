@@ -1,0 +1,137 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f1f5f9;
+    color: #1e293b;
+}
+
+header {
+    background: linear-gradient(135deg, #075985, #0ea5e9);
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+nav {
+    background: #0f172a;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+button {
+    background: #0284c7;
+    color: white;
+    border: none;
+    padding: 11px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover {
+    background: #0369a1;
+}
+
+nav button {
+    background: transparent;
+    border: 1px solid #64748b;
+}
+
+nav button:hover {
+    background: #0284c7;
+}
+
+main {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+.section {
+    display: none;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+    margin-bottom: 25px;
+}
+
+.section.active {
+    display: block;
+}
+
+h2 {
+    color: #075985;
+    margin-bottom: 20px;
+}
+
+input {
+    display: block;
+    width: 100%;
+    max-width: 450px;
+    padding: 12px;
+    margin: 12px 0;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+form button {
+    margin-top: 10px;
+}
+
+#doctorList, #appointmentList, #adminList {
+    margin-top: 20px;
+}
+
+.doctor-card, .appointment-card {
+    background: #f8fafc;
+    border: 1px solid #cbd5e1;
+    padding: 18px;
+    border-radius: 8px;
+    margin: 12px 0;
+}
+
+.doctor-card h3, .appointment-card h3 {
+    color: #0369a1;
+    margin-bottom: 10px;
+}
+
+footer {
+    background: #0f172a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+p {
+    line-height: 1.6;
+}
+
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+    }
+
+    nav button {
+        width: 100%;
+    }
+
+    main {
+        padding: 12px;
+    }
+}
